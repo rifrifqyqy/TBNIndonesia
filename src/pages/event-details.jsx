@@ -86,7 +86,7 @@ export default function EventDetails() {
     <>
       <NavPage>EVENT DETAILS</NavPage>
       <div className="mx-[160px] mt-10 divide-y-2 divide-solid">
-        <div className="flex justify-between mb-12 h-auto transition bg-red-200 gap-16">
+        <div className="flex justify-between mb-12 h-auto transition gap-16">
           <div>
             <VideoEvent src={video.videourl}></VideoEvent>
           </div>
