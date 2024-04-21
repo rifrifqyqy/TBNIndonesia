@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "element": "/"
+    },
+    {
+      "path": "/event",
+      "element": "/"
+    },
+    {
+      "path": "/event-details/:id",
+      "element": "/"
+    },
+    {
+      "path": "/testing",
+      "element": "/"
+    }
+  ]
+}
