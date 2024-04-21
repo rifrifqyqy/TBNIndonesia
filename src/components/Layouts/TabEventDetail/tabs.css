@@ -1,0 +1,13 @@
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
+
+.active-tab {
+  background-color: #b6be28;
+  color: white;
+  
+}

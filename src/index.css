@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Staatliches&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-color: #cad32c;
+}
+
+.nav.active {
+  background-color: #fff;
+}
+
+.container {
+  overflow-x: hidden;
+}
+ul li a {
+  transition: linear 0.2s;
+  -webkit-transition: linear 0.2s;
+  -moz-transition: linear 0.2s;
+  -ms-transition: linear 0.2s;
+  -o-transition: linear 0.2s;
+}
+ul li a:hover {
+  color: var(--main-color) !important;
+}
+
+.bg-image-konten2 {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url(/images/konten2.jpg) lightgray 50% / cover no-repeat;
+}
+.bg-image-bannerevent {
+  background-image: url(/images/bannerevent.png);
+  background-size: cover;
+  background-position: center;
+}
+html {
+  scroll-behavior: smooth;
+  background-color: #f8f9fa;
+  font-family: "Inter", sans-serif;
+}
