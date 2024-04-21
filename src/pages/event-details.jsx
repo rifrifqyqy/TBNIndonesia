@@ -87,7 +87,9 @@ export default function EventDetails() {
       <NavPage>EVENT DETAILS</NavPage>
       <div className="mx-[160px] mt-10 divide-y-2 divide-solid bg-">
         <div className="flex justify-between mb-12 h-auto transition">
-          <VideoEvent src={video.videourl}></VideoEvent>
+          <div>
+            <VideoEvent src={video.videourl}></VideoEvent>
+          </div>
           <div className="flex flex-col max-w-min">
             <EventDescFrame title={eventData.title} date={eventData.date} location={eventData.location}></EventDescFrame>
             <div className="bg-[#F5F7D1] text-[#808800] font-medium text-[18px] py-4 px-6 mt-4 ">
