@@ -34,7 +34,7 @@ export default function HomeSection() {
             </h1>
             <p className="text-[14px] lg:text-[24px]">We assist you in fostering positive change and sustainable business growth.</p>
             <div className="mt-4 lg:mt-8">
-              <ButtonPrimary to="/event" className="rounded-md text-[16px] lg:text-[24px] px-6 text-white">
+              <ButtonPrimary to="/event" className="rounded-md text-[16px] lg:text-[24px] py-2 px-6 text-white">
                 See Events
               </ButtonPrimary>
             </div>
