@@ -26,7 +26,11 @@ export default function NavigationBar() {
   }, []);
 
   return (
-    <div className={`fixed md:flex flex-col md:flex-row lg:justify-between px-8 lg:px-20 py-5 lg:items-center top-0 font-inter z-50 ${isActive ? "bg-white shadow-shadow1" : ""} ${navActive ? "bg-white" : ""} transition ease-in duration-300 relative `}>
+    <div
+      className={`fixed md:flex flex-col md:flex-row lg:justify-between px-8 lg:px-20 py-5 lg:items-center top-0 font-inter z-50 ${isActive ? "bg-white shadow-shadow1" : ""} ${
+        navActive ? "bg-white" : ""
+      } transition ease-in duration-300 relative `}
+    >
       <div className="flex items-center justify-between w-full">
         <h1 className="">
           <img src="/images/logo.png" alt="" className="h-[32px] lg:h-[50px]" />
@@ -36,7 +40,7 @@ export default function NavigationBar() {
         </div>
       </div>
       <div className={` ${navActive ? "block" : "hidden"} md:flex lg:items-center ml-0`}>
-        <ul className="flex flex-col md:flex-row gap-4 mt-4 md:mt-0 lg:gap-10 text-[20px] md:justify-center font-medium md:flex">
+        <ul className="flex flex-col md:flex-row gap-4 mt-4 md:mt-0 lg:gap-10 text-[16px] lg:text-[20px] md:justify-center font-medium md:flex">
           <li>
             <a href="#home">Home</a>
           </li>
@@ -51,7 +55,6 @@ export default function NavigationBar() {
           </li>
         </ul>
       </div>
-      
     </div>
   );
 }

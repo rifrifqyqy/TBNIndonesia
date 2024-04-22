@@ -28,7 +28,7 @@ export default function AboutSection() {
   }, []);
   return (
     <section id="about">
-      <section className=" bg-gray-200 w-full py-20 flex mt-32 ">
+      <section className=" bg-gray-200 w-full py-8 lg:py-20 flex mt-8 lg:mt-32 ">
         <div className="flex  gap-8 flex-col lg:flex-row items-center lg:mx-[160px] lg:gap-0 lg:justify-between ">
           <div className="flex flex-col px-8 lg:px-0 lg:w-[50%] my-auto order-2 lg:order-1" ref={fadeLeft[0]}>
             <p className="tracking-[16px] lg:tracking-[20px]  text-[12px] lg:text-[20px] font-medium text-gray4 ">INVESTMENTS</p>

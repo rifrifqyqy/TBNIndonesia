@@ -109,7 +109,7 @@ export default function EventDetails() {
             <TabEventDetail.Header></TabEventDetail.Header>
           </TabEventDetail>
         </div>
-        <div className="flex justify-evenly pt-10">
+        <div className="flex justify-evenly pt-10" id="ticket">
           <CardOffer>
             <Label color="text-darkp">Regular</Label>
             <CardOffer.Regular></CardOffer.Regular>
