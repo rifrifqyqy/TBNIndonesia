@@ -6,6 +6,8 @@ import EventDescFrame from "../components/Fragments/Events/EventDescFrame";
 import TabEventDetail from "../components/Layouts/TabEventDetail/TabEventDetailLayouts";
 import Accordion from "../components/elements/Accordion/Accordion";
 import { useState } from "react";
+import CardOffer from "../components/elements/Card/CardOffer";
+import Label from "../components/elements/Label/Label";
 export default function EventDetails() {
   let { id } = useParams();
 
@@ -100,10 +102,22 @@ export default function EventDetails() {
             <Accordion section={accordionData}></Accordion>
           </div>
         </div>
-        <div>
+        <div className="mb-12">
           <TabEventDetail>
             <TabEventDetail.Header></TabEventDetail.Header>
           </TabEventDetail>
+        </div>
+        <div className="flex justify-evenly pt-10">
+          <CardOffer>
+            <Label>Regular</Label>
+            <CardOffer.Regular></CardOffer.Regular>
+          </CardOffer>
+          <CardOffer>
+            <Label bglabel="bg-[#FFE7E7] " color="text-[#FF4B4B]">
+              Group Table
+            </Label>
+            <CardOffer.GroupTable></CardOffer.GroupTable>
+          </CardOffer>
         </div>
       </div>
     </>
