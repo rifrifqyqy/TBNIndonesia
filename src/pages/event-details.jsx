@@ -109,7 +109,7 @@ export default function EventDetails() {
         </div>
         <div className="flex justify-evenly pt-10">
           <CardOffer>
-            <Label>Regular</Label>
+            <Label color="text-darkp">Regular</Label>
             <CardOffer.Regular></CardOffer.Regular>
           </CardOffer>
           <CardOffer>
