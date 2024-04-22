@@ -8,12 +8,18 @@ export default function FooterSection() {
           </div>
         </div>
         <div>
-          <h1 className="text-[24px] font-medium lg:text-center lg:text-[32px]">Contact Us</h1>
-          <p className="text-gray-200 text-[14px] lg:text-[16px]">Indonesia Team Impact HubLippo Thamrin Lt.5 #0503Jl. M.H.Thamrin No.20, MentengJakarta Pusat 10350, IndonesiaWhatsApp : +62823 1000 1908Email : info@tbnindonesia.org</p>
+          <h1 className="text-[24px] font-medium text-center lg:text-[32px]">Contact Us</h1>
+          <p className="text-gray-200 text-[14px] text-center lg:text-left lg:text-[16px]">Indonesia Team Impact HubLippo Thamrin Lt.5 #0503Jl. M.H.Thamrin No.20, MentengJakarta Pusat 10350, IndonesiaWhatsApp : +62823 1000 1908Email : info@tbnindonesia.org</p>
         </div>
-        <div>
-          <h1 className="text-[24px] font-medium lg:text-center lg:text-[32px]">Connect with Us</h1>
-          <p className="text-gray-200 text-[14px] lg:text-[16px]">Indonesia Team Impact HubLippo Thamrin Lt.5 #0503Jl. M.H.Thamrin No.20, MentengJakarta Pusat 10350, IndonesiaWhatsApp : +62823 1000 1908Email : info@tbnindonesia.org</p>
+        <div className="flex flex-col gap-4">
+          <h1 className="text-[24px] font-medium text-center lg:text-[32px]">Connect with Us</h1>
+          <div className="flex gap-4 justify-center">
+            <img src="/images/wa.svg" alt="" className="w-[24px] " />
+            <img src="/images/yt.svg" alt="" className="w-[30px] " />
+            <img src="/images/linkedin.svg" alt="" className="w-[24px] " />
+            <img src="/images/insta.svg" alt="" className="w-[24px] " />
+          </div>
+          <h2 className="text-center">© 2023 TBN Indonesia. All Rights Reserved.</h2>
         </div>
       </div>
     </div>
