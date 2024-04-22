@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./tabs.css";
-import EventLayoutLatest from "../../Fragments/Events/EventLatest";
-import EventLayoutUpcoming from "../../Fragments/Events/EventUpcoming";
 import TabsEventImg from "../../elements/Tabs/TabsEvent";
 import Introduction from "./Content/Introduction";
 import WhatWeOffer from "./Content/WhatWeOffer";
@@ -21,13 +19,7 @@ function Header(props) {
     <div className="flex flex-col gap-6">
       <section className="flex gap-4 mt-8 rounded-md transition ease-linear duration-200">
         <TabsEventImg>
-          <TabsEventImg.Container
-            onClick={() => updateToggle(1)}
-            toggle={toggle === 1 ? "active-tab " : "overflow-hidden"}
-            toggleImg={toggle === 1 ? "translate-y-0" : "translate-y-20"}
-            imgOffset="-right-2"
-            src="/images/Introduction.png"
-          >
+          <TabsEventImg.Container onClick={() => updateToggle(1)} toggle={toggle === 1 ? "active-tab " : "overflow-hidden"} toggleImg={toggle === 1 ? "translate-y-0" : "translate-y-20"} imgOffset="-right-2" src="/images/Introduction.png">
             <h1 className="text-[20px] self-center">Introduction</h1>
           </TabsEventImg.Container>
         </TabsEventImg>
@@ -37,24 +29,12 @@ function Header(props) {
           </TabsEventImg.Container>
         </TabsEventImg>
         <TabsEventImg>
-          <TabsEventImg.Container
-            onClick={() => updateToggle(3)}
-            toggle={toggle === 3 ? "active-tab " : "overflow-hidden"}
-            toggleImg={toggle === 3 ? "translate-y-0" : "translate-y-20"}
-            imgOffset="-right-2"
-            src="/images/Wowkaget.png"
-          >
+          <TabsEventImg.Container onClick={() => updateToggle(3)} toggle={toggle === 3 ? "active-tab " : "overflow-hidden"} toggleImg={toggle === 3 ? "translate-y-0" : "translate-y-20"} imgOffset="-right-2" src="/images/Wowkaget.png">
             <h1 className="text-[20px] self-center">Why It Matters</h1>
           </TabsEventImg.Container>
         </TabsEventImg>
         <TabsEventImg>
-          <TabsEventImg.Container
-            onClick={() => updateToggle(4)}
-            toggle={toggle === 4 ? "active-tab " : "overflow-hidden"}
-            toggleImg={toggle === 4 ? "translate-y-0" : "translate-y-20"}
-            imgOffset="-right-2"
-            src="/images/Wowkaget.png"
-          >
+          <TabsEventImg.Container onClick={() => updateToggle(4)} toggle={toggle === 4 ? "active-tab " : "overflow-hidden"} toggleImg={toggle === 4 ? "translate-y-0" : "translate-y-20"} imgOffset="-right-2" src="/images/Wowkaget.png">
             <h1 className="text-[20px] self-center">Join Us</h1>
           </TabsEventImg.Container>
         </TabsEventImg>

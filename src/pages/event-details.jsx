@@ -8,6 +8,8 @@ import Accordion from "../components/elements/Accordion/Accordion";
 import { useState } from "react";
 import CardOffer from "../components/elements/Card/CardOffer";
 import Label from "../components/elements/Label/Label";
+import ScrollToTop from "../scrollToTop";
+import FooterSection from "../components/FooterSection";
 export default function EventDetails() {
   let { id } = useParams();
 
@@ -87,7 +89,7 @@ export default function EventDetails() {
   return (
     <>
       <NavPage>EVENT DETAILS</NavPage>
-      <div className="mx-[160px] mt-10 divide-y-2 divide-solid">
+      <div className="mx-[160px] mt-10 divide-y-2 divide-solid" id="top">
         <div className="flex justify-between mb-12 h-auto transition gap-16">
           <div>
             <VideoEvent src={video.videourl}></VideoEvent>
@@ -120,6 +122,7 @@ export default function EventDetails() {
           </CardOffer>
         </div>
       </div>
+      <FooterSection/>
     </>
   );
 }

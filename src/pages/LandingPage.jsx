@@ -1,9 +1,9 @@
 import AboutSection from "../components/AboutSection";
 import EventSection from "../components/EventSection";
+import FooterSection from "../components/FooterSection";
 import HomeSection from "../components/HomeSection";
 import NavigationBar from "../components/NavigationBar";
 import SponsorSection from "../components/SponsorSection";
-
 
 export default function LandingPage() {
   return (
@@ -15,6 +15,7 @@ export default function LandingPage() {
         <EventSection></EventSection>
         <AboutSection></AboutSection>
         <SponsorSection />
+        <FooterSection/>
       </div>
     </>
   );

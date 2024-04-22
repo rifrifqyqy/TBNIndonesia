@@ -1,27 +1,43 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import EventPage from "./pages/event";
 import "./index.css";
 import EventDetails from "./pages/event-details";
 import TestingPage from "./pages/testingPage";
+import ScrollToTop from "./scrollToTop";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <LandingPage />,
+    element: (
+      <>
+        <LandingPage />
+      </>
+    ),
   },
   {
     path: "/event",
-    element: <EventPage />,
+
+    element: (
+      <>
+        <ScrollToTop />
+        <EventPage />
+      </>
+    ),
   },
   {
     path: "/event-details/:id",
-    element: <EventDetails />,
+    element: (
+      <>
+        <ScrollToTop />
+        <EventDetails />
+      </>
+    ),
   },
   {
     path: "/testing",
-    element: <TestingPage/>,
+    element: <TestingPage />,
   },
 ]);
 function scrollToTarget(id) {
@@ -33,6 +49,6 @@ function scrollToTarget(id) {
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router}></RouterProvider>
   </React.StrictMode>
 );
