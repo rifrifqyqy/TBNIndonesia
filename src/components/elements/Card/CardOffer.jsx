@@ -77,7 +77,7 @@ function Regular() {
           ))}
         </div>
       </div>
-      <ButtonPrimary to={linkRegular} className=" text-center text-white lg:text-[20px] rounded-sm lg:rounded-lg">
+      <ButtonPrimary to={linkRegular} className=" text-center text-white py-1 lg:text-[20px] rounded-md lg:rounded-lg">
         Buy Ticket
       </ButtonPrimary>
     </div>
@@ -86,10 +86,9 @@ function Regular() {
 function GroupTable() {
   return (
     <div className="flex flex-col mt-4 h-full justify-between gap-4 lg:gap-12">
-      <div className="flex flex-col gap-4">
-        <div className="flex flex-col ">
+      <div className="flex flex-col gap-4 ">
+        <div className="flex flex-col px-4 lg:px-0">
           <h1 className="text-[20px] lg:text-[32px] font-semibold">{groupTablePrice.toLocaleString("id-ID", { currency: "IDR" })}</h1>
-
           <span className="text-gray3 text-[14px] lg:text-[16px]">per Group</span>
         </div>
         <div className="flex flex-col gap-2">
@@ -101,7 +100,7 @@ function GroupTable() {
           ))}
         </div>
       </div>
-      <ButtonPrimary to={linkGroupTable} className="text-center text-white lg:text-[20px] rounded-sm lg:rounded-lg">
+      <ButtonPrimary to={linkGroupTable} className="text-center text-white py-1 lg:text-[20px] rounded-md lg:rounded-lg">
         Buy Ticket
       </ButtonPrimary>
     </div>

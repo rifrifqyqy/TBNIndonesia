@@ -5,8 +5,7 @@ export default function WhatWeOffer() {
     <DescContent>
       <h1 className=" text-[20px] lg:text-[32px] font-medium">What We Offer</h1>
       <p className="text-[14px] lg:text-[16px]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti officia placeat quasi omnis explicabo optio assumenda dignissimos. Molestias, quae. Deleniti accusantium excepturi commodi alias facere. Aut repellat excepturi
-        quibusdam tempora.
+        
       </p>
       <h1 className="text-[20px] lg:text-[32px]  font-medium">Dynamic Keynote Speakers :</h1>
       <p className="text-[14px] lg:text-[16px]">

@@ -47,7 +47,7 @@ function Header(props) {
             toggle={toggle === 3 ? "active-tab  overflow-hidden lg:overflow-visible " : "overflow-hidden"}
             toggleImg={toggle === 3 ? "translate-y-40 lg:translate-y-0" : "translate-y-10 lg:translate-y-20 "}
             imgOffset="-right-2 opacity-20 lg:opacity-100"
-            src="/images/Wowkaget.png"
+            src="/images/Businessman.png"
           >
             <h1 className="lg:text-[20px] self-center z-10">Why It Matters</h1>
           </TabsEventImg.Container>
@@ -58,7 +58,7 @@ function Header(props) {
             toggle={toggle === 4 ? "active-tab  overflow-hidden lg:overflow-visible " : "overflow-hidden"}
             toggleImg={toggle === 4 ? "translate-y-40 lg:translate-y-0" : "translate-y-10 lg:translate-y-20 "}
             imgOffset="-right-2 opacity-20 lg:opacity-100"
-            src="/images/Wowkaget.png"
+            src="/images/Businessman2.png"
           >
             <h1 className="lg:text-[20px] self-center z-10">Join Us</h1>
           </TabsEventImg.Container>
