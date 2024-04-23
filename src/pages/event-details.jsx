@@ -121,7 +121,7 @@ export default function EventDetails() {
             <TabEventDetail.Header></TabEventDetail.Header>
           </TabEventDetail>
         </div>
-        <div className="flex justify-between lg:justify-evenly pt-10" id="ticket">
+        <div className="flex justify-between lg:justify-evenly pt-4 lg:pt-10 gap-2" id="ticket">
           <CardOffer>
             <Label color="text-darkp">Regular</Label>
             <CardOffer.Regular></CardOffer.Regular>

@@ -57,17 +57,16 @@ const linkGroupTable = servicesGroupTable[0].linkform;
 export default function CardOffer(props) {
   const { children } = props;
 
-  return <div className="flex w-[195px] lg:w-[416px] bg-white p-4 lg:p-6 flex-col rounded-xl shadow-sm">{children}</div>;
+  return <div className="flex w-[195px] lg:w-[416px] bg-white p-2 lg:p-6 flex-col rounded-xl shadow-sm">{children}</div>;
 }
 
 function Regular() {
   return (
     <div className="flex flex-col mt-4 h-full justify-between gap-4 lg:gap-12">
-      <div className="flex flex-col gap-2 lg:gap-4">
-        <div className="flex flex-col ">
+      <div className="flex flex-col gap-2 lg:gap-4 ">
+        <div className="flex flex-col px-4 lg:px-0 ">
           <h1 className="text-[20px] lg:text-[32px] font-semibold">{regularPrice.toLocaleString("id-ID", { currency: "IDR" })}</h1>
-
-          <span className="text-gray3 text-[14px] lg:text-[16px]">per Person</span>
+          <span className="text-gray3 text-[12px] lg:text-[16px]">per Person</span>
         </div>
         <div className="flex flex-col gap-2">
           {servicesRegular.map((service) => (
@@ -86,7 +85,7 @@ function Regular() {
 }
 function GroupTable() {
   return (
-    <div className="flex flex-col mt-4 h-full justify-between gap-12">
+    <div className="flex flex-col mt-4 h-full justify-between gap-4 lg:gap-12">
       <div className="flex flex-col gap-4">
         <div className="flex flex-col ">
           <h1 className="text-[20px] lg:text-[32px] font-semibold">{groupTablePrice.toLocaleString("id-ID", { currency: "IDR" })}</h1>

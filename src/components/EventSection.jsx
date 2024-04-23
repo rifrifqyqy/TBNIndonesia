@@ -55,7 +55,7 @@ export default function EventSection() {
             <img src="/images/Arrow_Right.svg" alt="" className="w-[24px] lg:w-[32px] " />
           </Link>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-2 lg:gap-8 mt-5 justify-items-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-2 lg:gap-8 mt-5 lg:justify-items-center">
           {event.map((event) => (
             <CardEvent key={event.id} image={event.image} title={event.title} to={`/event-details/${event.id}`}>
               {event.desc}

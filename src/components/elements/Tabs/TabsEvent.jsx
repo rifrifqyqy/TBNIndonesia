@@ -22,7 +22,7 @@ function Image(props) {
   const { imgOffset, toggle, src } = props;
 
   return (
-    <div className={`flex w-full h-full bg-slaate-300 transform transition-transform absolute ${toggle} `}>
+    <div className={`flex w-full h-full transform transition-transform absolute ${toggle} `}>
       <img src={src} alt="" className={`bottom-0 ${imgOffset} absolute `} />
     </div>
   );

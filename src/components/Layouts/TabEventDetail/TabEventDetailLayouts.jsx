@@ -20,23 +20,47 @@ function Header(props) {
     <div className="flex flex-col gap-6 ">
       <section className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 mt-8 rounded-md transition ease-linear duration-200">
         <TabsEventImg>
-          <TabsEventImg.Container onClick={() => updateToggle(1)} toggle={toggle === 1 ? "active-tab overflow-hidden lg:overflow-visible " : "overflow-hidden"} toggleImg={toggle === 1 ? "translate-y-40 lg:translate-y-0" : "translate-y-10 lg:translate-y-20 "} imgOffset="-right-2 opacity-20 lg:opacity-100" src="/images/Introduction.png">
-            <h1 className="text-[20px] self-center z-10 ">Introduction</h1>
+          <TabsEventImg.Container
+            onClick={() => updateToggle(1)}
+            toggle={toggle === 1 ? "active-tab overflow-hidden lg:overflow-visible " : "overflow-hidden"}
+            toggleImg={toggle === 1 ? "translate-y-40 lg:translate-y-0" : "translate-y-10 lg:translate-y-20 "}
+            imgOffset="-right-2 opacity-20 lg:opacity-100"
+            src="/images/Introduction.png"
+          >
+            <h1 className="lg:text-[20px] self-center z-10 ">Introduction</h1>
           </TabsEventImg.Container>
         </TabsEventImg>
         <TabsEventImg>
-          <TabsEventImg.Container onClick={() => updateToggle(2)} toggle={toggle === 2 ? "active-tab  overflow-hidden lg:overflow-visible " : "overflow-hidden"} toggleImg={toggle === 2 ? "translate-y-40 lg:translate-y-0" : "translate-y-10 lg:translate-y-20 "} imgOffset="-right-2 opacity-20 lg:opacity-100" src="/images/Wowkaget.png">
-            <h1 className="text-[20px] self-center z-10 ">What We Offers</h1>
+          <TabsEventImg.Container
+            onClick={() => updateToggle(2)}
+            toggle={toggle === 2 ? "active-tab  overflow-hidden lg:overflow-visible " : "overflow-hidden"}
+            toggleImg={toggle === 2 ? "translate-y-40 lg:translate-y-0" : "translate-y-10 lg:translate-y-20 "}
+            imgOffset="-right-2 opacity-20 lg:opacity-100"
+            src="/images/Wowkaget.png"
+          >
+            <h1 className="lg:text-[20px] self-center z-10 ">What We Offers</h1>
           </TabsEventImg.Container>
         </TabsEventImg>
         <TabsEventImg>
-          <TabsEventImg.Container onClick={() => updateToggle(3)} toggle={toggle === 3 ? "active-tab  overflow-hidden lg:overflow-visible " : "overflow-hidden"} toggleImg={toggle === 3 ? "translate-y-40 lg:translate-y-0" : "translate-y-10 lg:translate-y-20 "} imgOffset="-right-2 opacity-20 lg:opacity-100" src="/images/Wowkaget.png">
-            <h1 className="text-[20px] self-center z-10">Why It Matters</h1>
+          <TabsEventImg.Container
+            onClick={() => updateToggle(3)}
+            toggle={toggle === 3 ? "active-tab  overflow-hidden lg:overflow-visible " : "overflow-hidden"}
+            toggleImg={toggle === 3 ? "translate-y-40 lg:translate-y-0" : "translate-y-10 lg:translate-y-20 "}
+            imgOffset="-right-2 opacity-20 lg:opacity-100"
+            src="/images/Wowkaget.png"
+          >
+            <h1 className="lg:text-[20px] self-center z-10">Why It Matters</h1>
           </TabsEventImg.Container>
         </TabsEventImg>
         <TabsEventImg>
-          <TabsEventImg.Container onClick={() => updateToggle(4)} toggle={toggle === 4 ? "active-tab  overflow-hidden lg:overflow-visible " : "overflow-hidden"} toggleImg={toggle === 4 ? "translate-y-40 lg:translate-y-0" : "translate-y-10 lg:translate-y-20 "} imgOffset="-right-2 opacity-20 lg:opacity-100" src="/images/Wowkaget.png">
-            <h1 className="text-[20px] self-center z-10">Join Us</h1>
+          <TabsEventImg.Container
+            onClick={() => updateToggle(4)}
+            toggle={toggle === 4 ? "active-tab  overflow-hidden lg:overflow-visible " : "overflow-hidden"}
+            toggleImg={toggle === 4 ? "translate-y-40 lg:translate-y-0" : "translate-y-10 lg:translate-y-20 "}
+            imgOffset="-right-2 opacity-20 lg:opacity-100"
+            src="/images/Wowkaget.png"
+          >
+            <h1 className="lg:text-[20px] self-center z-10">Join Us</h1>
           </TabsEventImg.Container>
         </TabsEventImg>
       </section>
