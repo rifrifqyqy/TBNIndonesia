@@ -45,9 +45,9 @@ export default function EventSection() {
 
   return (
     <div id="event">
-      <div ref={sectionRef} className="relative mx-[20px] lg:mx-[160px] mt-8 lg:mt-24 font-inter">
+      <div ref={sectionRef} className="relative mx-[10px] lg:mx-[160px] mt-8 lg:mt-24 font-inter">
         <div className="flex justify-between items-center">
-          <h1 className="text-[16px] lg:text-[40px] font-semibold text-gray1">
+          <h1 className="text-[16px] lg:text-[40px] px-2 lg:px-0 font-semibold text-gray1">
             Events and<span className="text-darkp"> Workshops</span>
           </h1>
           <Link to="/event" className="flex gap-2 lg:gap-5 hover:text-darkp items-center">

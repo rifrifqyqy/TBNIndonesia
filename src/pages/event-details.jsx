@@ -10,6 +10,7 @@ import CardOffer from "../components/elements/Card/CardOffer";
 import Label from "../components/elements/Label/Label";
 import ScrollToTop from "../scrollToTop";
 import FooterSection from "../components/FooterSection";
+import LinkButton from "../components/elements/Button/LinkButton";
 export default function EventDetails() {
   let { id } = useParams();
 
@@ -22,6 +23,7 @@ export default function EventDetails() {
       videourl: "https://www.youtube.com/embed/Hajlb9IgvGg?si=-89eSytnUEsOBsS3",
       date: "10 November 2023",
       location: "Menara Danareksa (ARYA NUSA BALLROOM) Jakarta",
+      gmaps: "https://maps.app.goo.gl/CGJb4ynP9iZNhbNH9",
     },
     {
       id: 2,
@@ -31,6 +33,7 @@ export default function EventDetails() {
       videourl: "https://www.youtube.com/embed/wPFolj0WG0g?si=k07R8Z9xWR7DhxP1",
       date: "10 November 2023",
       location: "South Jakarta, Indonesia",
+      gmaps: "https://maps.app.goo.gl/RhFdBYwYUwwTVsdc7",
     },
     {
       id: 3,
@@ -39,7 +42,8 @@ export default function EventDetails() {
       desc: "Grow your Social Entrepreneurship potential in a one-day bootcamp filled with challenges and intensive learning.",
       videourl: "https://www.youtube.com/embed/wPFolj0WG0g?si=k07R8Z9xWR7DhxP1",
       date: "10 November 2023",
-      location: "MENARA DANAREKSA (ARYA NUSA BALLROOM) JAKARTA",
+      location: "Menara Danareksa (ARYA NUSA BALLROOM) Jakarta",
+      gmaps: "https://maps.app.goo.gl/CGJb4ynP9iZNhbNH9",
     },
     {
       id: 4,
@@ -47,7 +51,8 @@ export default function EventDetails() {
       title: "A journey into Sociopreneurship",
       desc: "Grow your Social Entrepreneurship potential in a one-day bootcamp filled with challenges and intensive learning.",
       videourl: "https://www.youtube.com/embed/wPFolj0WG0g?si=k07R8Z9xWR7DhxP1",
-      location: "MENARA DANAREKSA (ARYA NUSA BALLROOM) JAKARTA",
+      location: "Menara Danareksa (ARYA NUSA BALLROOM) Jakarta",
+      gmaps: "https://maps.app.goo.gl/CGJb4ynP9iZNhbNH9",
     },
     {
       id: 5,
@@ -57,6 +62,7 @@ export default function EventDetails() {
       videourl: "https://www.youtube.com/embed/wPFolj0WG0g?si=k07R8Z9xWR7DhxP1",
       date: "10 November 2023",
       location: "South Jakarta, Indonesia",
+      gmaps: "https://maps.app.goo.gl/RhFdBYwYUwwTVsdc7",
     },
     {
       id: 6,
@@ -66,18 +72,28 @@ export default function EventDetails() {
       videourl: "https://www.youtube.com/embed/wPFolj0WG0g?si=k07R8Z9xWR7DhxP1",
       date: "10 November 2023",
       location: "South Jakarta, Indonesia",
+      gmaps: "https://maps.app.goo.gl/RhFdBYwYUwwTVsdc7",
     },
   ];
 
   const [isAnimate, setIsAnimate] = useState(false);
   const eventData = data.find((event) => event.id === parseInt(id));
   const video = eventData;
-  const date = eventData;
   const location = eventData;
+  const linkmap = eventData;
+  const linkgmaps = linkmap.gmaps;
   const accordionData = [
     {
       title: "Check Event Location",
-      content: location.location,
+      content: (
+        <>
+          {location.location}
+          <LinkButton className="text-[12px]  lg:text-[14px] text-blue-500 hover:text-gray-400" to={linkgmaps}>
+            {" "}
+            Lihat Maps
+          </LinkButton>
+        </>
+      ),
     },
     {
       title: "More Information",
@@ -105,7 +121,7 @@ export default function EventDetails() {
             <VideoEvent src={video.videourl}></VideoEvent>
           </div>
           <div className="flex flex-col max-w-full lg:max-w-min">
-            <EventDescFrame targetDivId2="Learn" targetDivId = "targetDiv" title={eventData.title} date={eventData.date} location={eventData.location}></EventDescFrame>
+            <EventDescFrame targetDivId2="Learn" targetDivId="targetDiv" title={eventData.title} date={eventData.date} location={eventData.location}></EventDescFrame>
 
             <div className="bg-[#F5F7D1] text-[#808800] font-medium text-[18px] text-center lg:text-left py-4 lg:px-6 mt-4 ">
               <h1 className={` animate__animated ${isAnimate ? "animate__shakeX" : ""} cursor-pointer text-[14px] lg:text-[16px]`} onClick={animateClick}>
