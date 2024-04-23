@@ -104,7 +104,7 @@ export default function EventDetails() {
           <div>
             <VideoEvent src={video.videourl}></VideoEvent>
           </div>
-          <div className="flex flex-col max-w-max lg:max-w-min">
+          <div className="flex flex-col max-w-full lg:max-w-min">
             <EventDescFrame targetDivId2="Learn" targetDivId = "targetDiv" title={eventData.title} date={eventData.date} location={eventData.location}></EventDescFrame>
 
             <div className="bg-[#F5F7D1] text-[#808800] font-medium text-[18px] text-center lg:text-left py-4 lg:px-6 mt-4 ">
