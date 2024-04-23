@@ -89,7 +89,7 @@ function GroupTable() {
       <div className="flex flex-col gap-4 ">
         <div className="flex flex-col px-4 lg:px-0">
           <h1 className="text-[20px] lg:text-[32px] font-semibold">{groupTablePrice.toLocaleString("id-ID", { currency: "IDR" })}</h1>
-          <span className="text-gray3 text-[14px] lg:text-[16px]">per Group</span>
+          <span className="text-gray3 text-[12px] lg:text-[16px]">per Group</span>
         </div>
         <div className="flex flex-col gap-2">
           {servicesGroupTable.map((service) => (
