@@ -7,3 +7,4 @@ export default function DescContent(props) {
   );
 }
 
+// description box taba event

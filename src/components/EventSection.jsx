@@ -22,6 +22,12 @@ const event = [
     title: "A journey into Sociopreneurship",
     desc: "Grow your Social Entrepreneurship potential in a one-day bootcamp filled with challenges and intensive learning.",
   },
+  {
+    id: 4,
+    image: "/images/poster3.jpg",
+    title: "A journey into Sociopreneurship",
+    desc: "Grow your Social Entrepreneurship potential in a one-day bootcamp filled with challenges and intensive learning.",
+  },
 ];
 export default function EventSection() {
   const sectionRef = useRef(null);
@@ -49,7 +55,7 @@ export default function EventSection() {
             <img src="/images/Arrow_Right.svg" alt="" className="w-[24px] lg:w-[32px] " />
           </Link>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mt-5 justify-items-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-2 lg:gap-8 mt-5 justify-items-center">
           {event.map((event) => (
             <CardEvent key={event.id} image={event.image} title={event.title} to={`/event-details/${event.id}`}>
               {event.desc}

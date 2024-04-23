@@ -1,7 +1,7 @@
 export default function VideoEvent(props) {
   const { src } = props;
   return (
-    <section className="rounded-lg aspect-video h-[400px] w-[600px]">
+    <section className="rounded-lg aspect-video h-[200px] w-full lg:h-[400px] lg:w-[600px]">
       <iframe
         src={src}
         title="YouTube video player"

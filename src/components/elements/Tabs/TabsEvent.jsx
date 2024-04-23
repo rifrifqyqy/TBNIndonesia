@@ -11,7 +11,7 @@ function Container(props) {
   const { imgOffset, children, toggle, onClick, toggleImg, src } = props;
 
   return (
-    <div className={`${toggle} w-[280px] h-[90px] flex rounded-xl bg-gray-200 cursor-pointer font-semibold pl-4 text-gray1 relative transition ease-linear duration-200`} onClick={onClick}>
+    <div className={`${toggle} w-[280px] h-[60px] lg:h-[90px] flex rounded-xl bg-gray-200 cursor-pointer font-semibold lg:pl-4 text-gray1 relative transition ease-linear duration-200 justify-center lg:justify-start`} onClick={onClick}>
       {children}
       <TabsEventImg.Image imgOffset={imgOffset} toggle={toggleImg} src={src}></TabsEventImg.Image>
     </div>
