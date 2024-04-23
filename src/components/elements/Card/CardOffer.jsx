@@ -77,7 +77,7 @@ function Regular() {
           ))}
         </div>
       </div>
-      <ButtonPrimary to={linkRegular} className=" text-center text-white py-1 lg:text-[20px] rounded-md lg:rounded-lg">
+      <ButtonPrimary to={linkRegular} className=" text-center text-white py-1 text-[14px] lg:text-[20px] rounded-md lg:rounded-lg">
         Buy Ticket
       </ButtonPrimary>
     </div>
@@ -100,7 +100,7 @@ function GroupTable() {
           ))}
         </div>
       </div>
-      <ButtonPrimary to={linkGroupTable} className="text-center text-white py-1 lg:text-[20px] rounded-md lg:rounded-lg">
+      <ButtonPrimary to={linkGroupTable} className="text-center text-white py-1 text-[14px] lg:text-[20px] rounded-md lg:rounded-lg">
         Buy Ticket
       </ButtonPrimary>
     </div>

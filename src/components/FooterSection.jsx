@@ -3,8 +3,8 @@ export default function FooterSection() {
     <div className="flex bg-[#3D4C5E] text-white py-12 mt-8 lg:mt-24">
       <div className="mx-8 grid gap-4 grid-row-3 lg:grid-cols-3 lg:mx-24">
         <div>
-          <div className="flex bg-white py-2 max-w-fit px-5 rounded-lg mx-auto lg:mx-0">
-            <img src="/images/logo.png" alt="" className="w-[100px] lg:w-full" />
+          <div className="flex py-2 max-w-fit px-5 rounded-lg mx-auto lg:mx-0">
+            <img src="/images/logowhite.png" alt="" className="w-[100px] lg:w-full" />
           </div>
         </div>
         <div>

@@ -10,7 +10,7 @@ const AccordionSection = ({ section, isActiveSection, setActiveIndex, sectionInd
     <div>
       <div className="flex flex-col ">
         <div className="flex w-full justify-between items-center cursor-pointer px-4 rounded-lg transition ease-linear duration-200 hover:bg-[#eeeeee]" onClick={toggleSection}>
-          <div className="w-full flex items-center  lg:text-[20px] font-medium py-4">{section.title}</div>
+          <div className="w-full flex items-center lg:text-[20px] font-medium py-4 capitalize">{section.title}</div>
           <div>
             <img src="/images/Down_Arrow.svg" alt="" className={` transition-transform ${isActiveSection ? " rotate-180" : ""}`} />
           </div>

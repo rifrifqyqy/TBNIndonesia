@@ -17,11 +17,11 @@ export default function EventDetails() {
     {
       id: 1,
       image: "/images/poster5.jpg",
-      title: "GREEN TECHNOLOGY & GREEN ENERGY",
+      title: "GREEN TECHNOLOGY AND GREEN ENERGY",
       desc: "It's crucial to adapt to the changing sales landscape in the digital age, and Seth Godin's quote emphasizes the importance of customer-centricity.",
       videourl: "https://www.youtube.com/embed/Hajlb9IgvGg?si=-89eSytnUEsOBsS3",
       date: "10 November 2023",
-      location: "MENARA DANAREKSA (ARYA NUSA BALLROOM) JAKARTA",
+      location: "Menara Danareksa (ARYA NUSA BALLROOM) Jakarta",
     },
     {
       id: 2,
@@ -100,7 +100,7 @@ export default function EventDetails() {
     <>
       <NavPage>EVENT DETAILS</NavPage>
       <div className="mx-4 lg:mx-[160px] mt-8 divide-y-2 divide-solid" id="top">
-        <div className="flex flex-col lg:flex-row justify-between mb-6 lg:mb-12 h-auto transition gap-8 lg:gap-16">
+        <div className="flex flex-col lg:flex-row justify-between mb-6 lg:mb-12 h-auto transition gap-4 lg:gap-16">
           <div>
             <VideoEvent src={video.videourl}></VideoEvent>
           </div>

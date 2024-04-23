@@ -19,7 +19,7 @@ export default function CardEvent(props) {
         <h1 className=" text-[14px] lg:text-[20px] line-clamp-2 font-medium mt-3 uppercase">{title}</h1>
         <p className=" whitespace-nowrap text-ellipsis overflow-hidden text-[14px] lg:text-[16px] text-gray3">{children}</p>
         <div className="mt-auto flex self-end">
-          <ButtonPrimary to={to} className="text-[14px] lg:text-[16px] py-1 lg:py-2 px-2 lg:px-8 mt-3 rounded-sm lg:rounded-md text-white">
+          <ButtonPrimary to={to} className="text-[14px] lg:text-[16px] py-1 lg:py-2 px-3 lg:px-8 mt-3 rounded-md lg:rounded-md text-white">
             Lihat Event
           </ButtonPrimary>
         </div>
