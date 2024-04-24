@@ -88,7 +88,7 @@ export default function EventDetails() {
       content: (
         <>
           {location.location}
-          <LinkButton className="text-[12px]  lg:text-[14px] text-blue-500 hover:text-gray-400" to={linkgmaps}>
+          <LinkButton className="text-[12px] lg:text-[14px] text-blue-500 hover:text-gray-400" to={linkgmaps}>
             {" "}
             Lihat Maps
           </LinkButton>
