@@ -11,7 +11,7 @@ const servicesRegular = [
   {
     id: 1,
     facility: "1 Conference Day",
-    linkform: "https://forms.gle/VFJCdpeg8kABN1Nw5",
+    linkform: "https://tbn-package-regist.vercel.app/",
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const servicesGroupTable = [
   {
     id: 1,
     facility: "1 Reserved Table for 6 Persons",
-    linkform: "https://forms.gle/LBkwL6hKSx7ij64H7",
+    linkform: "https://tbn-package-regist.vercel.app/",
   },
   {
     id: 2,
