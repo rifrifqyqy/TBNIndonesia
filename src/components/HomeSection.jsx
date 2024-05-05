@@ -26,7 +26,7 @@ export default function HomeSection() {
   return (
     <Fragment>
       <div id="home">
-        <div ref={fadeRight} className="items-center flex h-[660px] lg:h-[450px] lg:ml-[160px] lg:mt-[210px] bg-image-konten2">
+        <div ref={fadeRight} className="items-center flex h-[660px] lg:h-[450px] lg:ml-[160px] lg:mt-[100px] bg-image-konten2">
           <div className="flex h-max flex-col mx-6 lg:flex-row lg:ml-20 lg:items-center">
             <div className="flex w-full flex-col mt-4 order-2 lg:order-1 lg:w-[70%]">
               <h1 className=" text-[24px] lg:text-[40px] font-semibold">

@@ -15,7 +15,6 @@
 }
 
 .container {
-  overflow-x: hidden;
 }
 ul li a {
   transition: linear 0.2s;

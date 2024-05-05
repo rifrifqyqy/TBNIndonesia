@@ -4,14 +4,12 @@ import FooterSection from "../components/FooterSection";
 import HomeSection from "../components/HomeSection";
 import NavigationBar from "../components/NavigationBar";
 import SponsorSection from "../components/SponsorSection";
+import { motion } from "framer-motion";
 
 export default function LandingPage() {
   return (
     <>
-      <div className="fixed z-50 w-full">
-        <NavigationBar></NavigationBar>
-      </div>
-
+      <NavigationBar></NavigationBar>
       <div className="overflow-x-hidden">
         <HomeSection></HomeSection>
         <SponsorSection></SponsorSection>
