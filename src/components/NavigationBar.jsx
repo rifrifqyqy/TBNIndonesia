@@ -27,7 +27,7 @@ export default function NavigationBar() {
 
   return (
     <div
-      className={`fixed md:flex flex-col md:flex-row lg:justify-between px-8 lg:px-20 py-5 lg:items-center top-0 font-inter z-50 ${isActive ? "bg-white shadow-shadow1" : ""} ${
+      className={`sticky md:flex flex-col md:flex-row lg:justify-between px-8 lg:px-20 py-5 lg:items-center top-0 font-inter z-50 ${isActive ? "bg-white shadow-shadow1" : ""} ${
         navActive ? "bg-white" : ""
       } transition ease-in duration-300 relative `}
     >

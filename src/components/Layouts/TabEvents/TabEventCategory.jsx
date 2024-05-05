@@ -20,7 +20,7 @@ function Header() {
     <div className="flex flex-col lg:gap-6 ">
       <div className="flex gap-5 lg:gap-0 flex-col lg:flex-row justify-between max-h-fit sticky top-[72px] lg:top-[75px] z-10 bg-[#f8f9fa] py-2 lg:py-4">
         <h1 className="order-2 lg:order-1 lg:text-[32px] font-medium">{text}</h1>
-        <section className="order-1 lg:order-2 flex bg-gray-100 max-w-fit rounded-sm lg:rounded-md hover:bg-gray-300 transition ease-linear duration-200">
+        <section className="order-1 lg:order-2 flex bg-gray-100 max-w-fit rounded-sm lg:rounded-md hover:bg-gray-200 transition ease-linear duration-200">
           <ButtonPrimary
             className={`${toggle === 1 ? "active-tab" : ""} text-[14px] lg:text-[16px] rounded-sm lg:rounded-md py-1 px-3 h-full bg-transparent content-center font-semibold text-gray1 transition ease-linear duration-200 `}
             onClick={() => updateToggle(1)}

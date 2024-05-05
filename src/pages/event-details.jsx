@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import ButtonPrimary from "../components/elements/Button/ButtonPrimary";
 import NavPage from "../components/NavigationPage";
 import VideoEvent from "../components/Fragments/Events/VideoEvent";
 import EventDescFrame from "../components/Fragments/Events/EventDescFrame";
@@ -8,7 +7,6 @@ import Accordion from "../components/elements/Accordion/Accordion";
 import { useState } from "react";
 import CardOffer from "../components/elements/Card/CardOffer";
 import Label from "../components/elements/Label/Label";
-import ScrollToTop from "../scrollToTop";
 import FooterSection from "../components/FooterSection";
 import LinkButton from "../components/elements/Button/LinkButton";
 export default function EventDetails() {
@@ -76,7 +74,7 @@ export default function EventDetails() {
     },
   ];
 
-  const [isAnimate, setIsAnimate] = useState(false);
+  const [isAnimate, setIsAnimate] = useState(null);
   const eventData = data.find((event) => event.id === parseInt(id));
   const video = eventData;
   const location = eventData;
@@ -109,12 +107,14 @@ export default function EventDetails() {
 
   const animateClick = () => {
     // Ubah nilai state isActive menjadi sebaliknya
-    setIsAnimate(!isAnimate);
-    return setIsAnimate(!isAnimate);
+    setIsAnimate("animated__animate animate__shakeX");
+    setTimeout(() => {
+      setIsAnimate(null);
+    }, 1000);
   };
   return (
     <>
-      <NavPage>EVENT DETAILS</NavPage>
+      <NavPage to="/">EVENT DETAILS</NavPage>
       <div className="mx-4 lg:mx-[160px] mt-8 divide-y-2 divide-solid" id="top">
         <div className="flex flex-col lg:flex-row justify-between mb-6 lg:mb-12 h-auto transition gap-4 lg:gap-16">
           <div>
@@ -124,7 +124,7 @@ export default function EventDetails() {
             <EventDescFrame targetDivId2="Learn" targetDivId="targetDiv" title={eventData.title} date={eventData.date} location={eventData.location}></EventDescFrame>
 
             <div className="bg-[#F5F7D1] text-[#808800] font-medium text-[18px] text-center lg:text-left py-4 lg:px-6 mt-4 ">
-              <h1 className={` animate__animated ${isAnimate ? "animate__shakeX" : ""} cursor-pointer text-[14px] lg:text-[16px]`} onClick={animateClick}>
+              <h1 className={` animate__animated ${isAnimate} cursor-pointer text-[14px] lg:text-[16px]`} onClick={animateClick}>
                 Insterested? Check our Event Informations
               </h1>
             </div>
