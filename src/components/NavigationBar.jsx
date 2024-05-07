@@ -19,15 +19,16 @@ export default function NavigationBar() {
   };
   const menuUp = {
     initial: {
-      y: 0,
-      opacity: 1,
+      x: -50,
+      opacity: 0,
     },
 
     animate: {
-      y: 0,
+      x: 0,
       opacity: 1,
       transition: {
-        delay: 1,
+        delay: 0.6,
+        duration: 0.6,
         ease: "easeOut",
       },
     },
@@ -89,13 +90,13 @@ export default function NavigationBar() {
         <ul className="flex flex-col md:flex-row gap-4 mt-4 md:mt-0 lg:gap-10 text-[16px] lg:text-[20px] md:justify-center font-medium md:flex">
           <div className="relative overflow-hidden">
             <motion.li variants={menuUp} className=" flex">
-              <a href="#about">Home</a>
+              <a href="#home">Home</a>
             </motion.li>
             <motion.div variants={coverDiv} className="bg-primary absolute top-0 left-0 h-full z-20"></motion.div>
           </div>
           <div className="relative overflow-hidden">
             <motion.li variants={menuUp} className=" flex">
-              <a href="#about">Events</a>
+              <a href="#event">Events</a>
             </motion.li>
             <motion.div variants={coverDiv} className="bg-primary absolute top-0 left-0 h-full z-20"></motion.div>
           </div>
@@ -108,7 +109,7 @@ export default function NavigationBar() {
 
           <div className="relative overflow-hidden">
             <motion.li variants={menuUp} className=" flex">
-              <a href="#about">Contact</a>
+              <a href="#footer">Contact</a>
             </motion.li>
             <motion.div variants={coverDiv} className="bg-primary absolute top-0 left-0 h-full z-20"></motion.div>
           </div>

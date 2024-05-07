@@ -1,6 +1,6 @@
 export default function FooterSection() {
   return (
-    <div className="flex bg-[#3D4C5E] text-white py-12 mt-8 lg:mt-24">
+    <div className="flex bg-[#3D4C5E] text-white py-12 mt-8 lg:mt-24" id="footer">
       <div className="mx-8 grid gap-4 grid-row-3 lg:grid-cols-3 lg:mx-24">
         <div>
           <div className="flex py-2 max-w-fit px-5 rounded-lg mx-auto lg:mx-0">
