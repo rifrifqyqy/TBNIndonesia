@@ -81,15 +81,17 @@ export default function HomeSection() {
           <div className="flex h-max flex-col mx-6 lg:flex-row lg:ml-20 lg:items-center">
             <div className="flex w-full flex-col mt-4 order-2 lg:order-1 lg:w-[70%]">
               <header className="relative overflow-hidden">
-                <h1 className=" text-[24px] lg:text-[40px] flex font-semibold">
+                <motion.h1 initial={{ y: "100%", opacity: 0 }} whileInView={{ y: 0, opacity: 1, transition: { delay: 2, duration: 0.4 } }} className=" text-[24px] lg:text-[40px] flex font-semibold">
                   Fostering Business <br />
                   Transformation
-                </h1>
+                </motion.h1>
                 <motion.div variants={textShow} className="h-full absolute bg-primary z-20 top-0 right-0"></motion.div>
               </header>
               <header className="relative overflow-hidden mt-2">
-                <p className="text-[14px] lg:text-[24px]">We assist you in fostering positive change and sustainable business growth.</p>
-                <motion.div variants={textShow} className="h-full mr-14 absolute bg-primary z-20 top-0 right-0"></motion.div>
+                <motion.p initial={{ y: "100%", opacity: 0 }} whileInView={{ y: 0, opacity: 1, transition: { delay: 2, duration: 0.4 } }} className="text-[14px] text-clip lg:text-[24px]">
+                  We assist you in fostering positive change and sustainable business growth.
+                </motion.p>
+                <motion.div variants={textShow} className="h-full  mr-14 absolute bg-primary z-20 top-0 right-0"></motion.div>
               </header>
 
               <div className="mt-4 lg:mt-8">
